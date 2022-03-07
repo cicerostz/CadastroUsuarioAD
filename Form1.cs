@@ -82,7 +82,7 @@ namespace UserAd
 
 
                     using (StreamWriter gravaArquivo = File.AppendText(caminho))
-                    gravaArquivo.WriteLine(txtNomeCompleto.Text. +","+txtPrimeiroNome.Text + "," + txtSobrenome.Text + "," +
+                    gravaArquivo.WriteLine(txtNomeCompleto.Text + ","+txtPrimeiroNome.Text + "," + txtSobrenome.Text + "," +
                        txtEmail.Text.ToLower() + "," + txtConta.Text + "," + "\"" + txtGrupo.Text + "\""
                         );
                   
@@ -90,7 +90,13 @@ namespace UserAd
                     
 
                     lblInformacao.Text = "Arquivo salvo em: " + Path.GetFullPath(caminho);
-                    
+
+                    txtNomeCompleto.Text = "";
+                    txtPrimeiroNome.Text = "";
+                    txtSobrenome.Text = "";
+                    txtEmail.Text = "";
+                    txtConta.Text = "";
+                    txtGrupo.Text = "";
 
 
                 }
