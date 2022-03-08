@@ -50,6 +50,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtPrimeiroNome
@@ -65,7 +66,7 @@
             this.txtNomeCompleto.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtNomeCompleto.Location = new System.Drawing.Point(337, 150);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
-            this.txtNomeCompleto.Size = new System.Drawing.Size(243, 20);
+            this.txtNomeCompleto.Size = new System.Drawing.Size(285, 20);
             this.txtNomeCompleto.TabIndex = 2;
             // 
             // txtEmail
@@ -89,7 +90,7 @@
             this.txtGrupo.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtGrupo.Location = new System.Drawing.Point(480, 234);
             this.txtGrupo.Name = "txtGrupo";
-            this.txtGrupo.Size = new System.Drawing.Size(100, 20);
+            this.txtGrupo.Size = new System.Drawing.Size(142, 20);
             this.txtGrupo.TabIndex = 5;
             // 
             // label1
@@ -207,7 +208,7 @@
             this.btnDeletarArquivo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnDeletarArquivo.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletarArquivo.Image")));
             this.btnDeletarArquivo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeletarArquivo.Location = new System.Drawing.Point(464, 297);
+            this.btnDeletarArquivo.Location = new System.Drawing.Point(494, 208);
             this.btnDeletarArquivo.Name = "btnDeletarArquivo";
             this.btnDeletarArquivo.Size = new System.Drawing.Size(116, 35);
             this.btnDeletarArquivo.TabIndex = 7;
@@ -221,12 +222,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(477, 203);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 13);
+            this.label6.Size = new System.Drawing.Size(145, 13);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Grupo";
+            this.label6.Text = "Unidade Organizacional (OU)";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnDeletarArquivo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 89);
             this.groupBox1.Name = "groupBox1";
@@ -268,7 +270,6 @@
             this.Controls.Add(this.txtSobrenome);
             this.Controls.Add(this.txtPrimeiroNome);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.btnDeletarArquivo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -278,6 +279,7 @@
             this.Text = "CadAd versão 1.0";
             this.Leave += new System.EventHandler(this.Form1_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
